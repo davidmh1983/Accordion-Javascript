@@ -29,11 +29,7 @@ function accordionDisplay() {
         if (dt.style.maxHeight) {
           dt.style.maxHeight = null;
         } else {
-          if (accordion.length === 1) {
-            dt.style.maxHeight = dt.scrollHeight + "px";
-          } else {
-            dt.style.maxHeight = "100%";
-          }
+          dt.style.maxHeight = 1000 + dt.scrollHeight + "px";
         }
       });
     }
