@@ -26,11 +26,9 @@ function accordionDisplay() {
         }
         //Swith the one clicked to active
         this.classList.toggle("active");
-        if (dt.style.maxHeight) {
-          dt.style.maxHeight = null;
-        } else {
-          dt.style.maxHeight = 1000 + dt.scrollHeight + "px";
-        }
+        dt.style.maxHeight = dt.style.maxHeight
+          ? null
+          : 1000 + dt.scrollHeight + "px";
       });
     }
   }
